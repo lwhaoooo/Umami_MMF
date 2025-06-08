@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import sys
-from models.umami_gin import GINConvNet
+from models.ginconv import GINConvNet
 from models.gat import GATNet  # 根据实际的文件结构调整导入路径
 from models.gcn import GCNNet
 from models.gat_gcn import GAT_GCN
