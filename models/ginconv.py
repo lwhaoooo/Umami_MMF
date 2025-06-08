@@ -7,7 +7,7 @@ from torch_geometric.nn import global_mean_pool as gap, global_max_pool as gmp
 
 # GINConv model
 class GINConvNet(torch.nn.Module):
-    def __init__(self, n_output=1,num_features_xd=78, num_features_xt=25,
+    def __init__(self, n_output=1,num_features_xd=320, num_features_xt=25,
                  n_filters=32, embed_dim=128, output_dim=128, dropout=0.2):
 
         super(GINConvNet, self).__init__()
@@ -50,6 +50,7 @@ class GINConvNet(torch.nn.Module):
         self.out = nn.Linear(256, self.n_output)        # n_output = 1 for regression task
 
     def forward(self, data):
+        # pdb.set_trace()
         x, edge_index, batch = data.x, data.edge_index, data.batch
         target = data.target
 
