@@ -7,7 +7,7 @@ import torch.nn as nn
 from models.gat import GATNet
 from models.gat_gcn import GAT_GCN
 from models.gcn import GCNNet
-from models.gin import GINConvNet
+from models.ginconv import GINConvNet
 from utils import *
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score, \
     average_precision_score, matthews_corrcoef
