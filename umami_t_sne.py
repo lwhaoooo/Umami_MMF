@@ -7,8 +7,7 @@ import torch.nn as nn
 from models.gat import GATNet
 from models.gat_gcn import GAT_GCN
 from models.gcn import GCNNet
-# from models.ginconv_GPCR_new_3conv import GINConvNet
-from models.umami_gin import GINConvNet
+from models.ginconv import GINConvNet
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 from utils import *
